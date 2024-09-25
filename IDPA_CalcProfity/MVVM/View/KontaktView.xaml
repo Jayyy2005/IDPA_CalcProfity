@@ -1,0 +1,84 @@
+﻿<Page x:Class="IDPA_CalcProfity.MVVM.View.KontaktView" 
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:IDPA_CalcProfity.MVVM.View"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      FontFamily="pack://application:,,,/Fonts/#Rubik"
+      Title="KontaktView">
+
+    <Grid>
+        <Grid>
+            <!-- Überschrift für den Kontaktbereich -->
+            <TextBlock Text="Kontakt"
+                       Foreground="White"
+                       FontSize="22"
+                       HorizontalAlignment="Left"
+                       Margin="20,0,0,0"/>
+        </Grid>
+
+        <Grid Margin="20,50,20,20">
+            <!-- Rahmen für das Kontaktformular -->
+            <Border Background="#121417"
+                    CornerRadius="10" 
+                    BorderBrush="SlateGray" 
+                    BorderThickness="1"
+                    Padding="25">
+
+                <StackPanel Orientation="Vertical">
+
+                    <!-- Formularüberschrift -->
+                    <TextBlock Text="Formular" 
+                               Foreground="White" 
+                               FontSize="18" 
+                               FontWeight="Bold" 
+                               Margin="0,0,0,20"/>
+
+                    <!-- Eingabefelder für Name und E-Mail -->
+                    <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <StackPanel Orientation="Horizontal" Width="300">
+                            <TextBlock Text="Name:" Foreground="White" Width="100" Margin="0,0,10,0"/>
+                            <TextBox x:Name="NameTextBox" Width="150" Height="20"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Width="400">
+                            <TextBlock Text="E-Mail Adresse:" Foreground="White" Width="100" Margin="0,0,10,0"/>
+                            <TextBox x:Name="EmailTextBox" Width="200"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <!-- Eingabefelder für Betriebssystem und Betreff -->
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,10">
+                        <StackPanel Orientation="Horizontal" Width="300">
+                            <TextBlock Text="Betriebssystem:" Foreground="White" Width="100" Margin="0,0,10,0"/>
+                            <ComboBox x:Name="BetriebssystemComboBox" Width="150" Height="20">
+                                <ComboBoxItem Content="Windows 11"/>
+                                <ComboBoxItem Content="Windows 10"/>
+                                <ComboBoxItem Content="älter"/>
+                            </ComboBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Width="400">
+                            <TextBlock Text="Betreff:" Foreground="White" Width="100" Margin="0,0,10,0"/>
+                            <TextBox x:Name="BetreffTextBox" Width="200"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <!-- Eingabefeld für die Nachricht -->
+                    <TextBlock Text="Nachricht:" Foreground="White" Margin="0,20,0,5"/>
+                    <TextBox x:Name="MessageTextBox" Height="100" Margin="0,0,0,20" AcceptsReturn="True" TextWrapping="Wrap"/>
+
+                    <!-- Absenden-Button -->
+                    <Button Content="Absenden" 
+                            Height="30"
+                            Background="#2E343B"
+                            Foreground="White"
+                            />
+
+                    <!-- Textblock für Statusmeldungen -->
+                    <TextBlock x:Name="StatusTextBlock" Margin="0,10,0,0" Foreground="Red"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

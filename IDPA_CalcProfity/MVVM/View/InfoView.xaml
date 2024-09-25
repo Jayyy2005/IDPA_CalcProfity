@@ -1,0 +1,86 @@
+﻿<Page x:Class="IDPA_CalcProfity.MVVM.View.InfoView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      FontFamily="pack://application:,,,/Fonts/#Rubik"
+      Title="InfoView">
+
+    <Grid>
+        <!-- Willkommenstext -->
+        <TextBlock Text="Willkommen bei CalcProfity!"
+                   Foreground="White"
+                   FontSize="22"
+                   HorizontalAlignment="Left"
+                   Margin="20,0,0,0" />
+
+        <!-- Einführungsbeschreibung -->
+        <TextBlock Text="CalcProfity ist eine spezialisierte App zur Unterstützung bei der Gewinnverteilung nach Schweizer Recht."
+                   Foreground="White"
+                   FontSize="16"
+                   HorizontalAlignment="Left"
+                   Margin="20,40,0,0"
+                   TextWrapping="Wrap" />
+
+        <!-- Abschnittsüberschrift: Zweck -->
+        <TextBlock Text="Zweck der App"
+                   Foreground="White"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Left"
+                   Margin="20,100,0,0" />
+
+        <!-- Beschreibung des Projekts -->
+        <TextBlock Text="Diese App wurde als Vorprojekt im Rahmen der IDPA Informatik EFZ an der Kantonsschule Baden für die Informatikmittelschule entwickelt. Die Arbeit wurde als Gruppenprojekt von Sanjay Raviraj, Cyril Lutziger, Dorian Herzig und Simon Veljkovic durchgeführt."
+                   Foreground="White"
+                   FontSize="16"
+                   HorizontalAlignment="Left"
+                   Margin="20,120,0,0"
+                   TextWrapping="Wrap" />
+
+        <!-- Abschnittsüberschrift: Funktion -->
+        <TextBlock Text="Funktion"
+                   Foreground="White"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Left"
+                   Margin="20,200,0,0" />
+
+        <!-- Funktionalität der App -->
+        <TextBlock Text="Berechnung und Speicherung der Gewinnverteilung basierend auf Finanzdaten."
+                   Foreground="White"
+                   FontSize="16"
+                   HorizontalAlignment="Left"
+                   Margin="20,220,0,0"
+                   TextWrapping="Wrap" />
+
+        <!-- Abschnittsüberschrift: Eingabewarnungen -->
+        <TextBlock Text="Warum sind meine Texteingaben rot markiert?:"
+                   Foreground="White"
+                   FontSize="16"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Left"
+                   Margin="20,260,0,0" />
+
+        <!-- Erklärung der roten Markierung -->
+        <TextBlock Text="Rot markierten Felder weisen auf Fehleingaben hin. Wenn Sie mit der Maus über die rot markierten Textfelder fahren, erhalten Sie Tipps zur Korrektur"
+            Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="20,280,0,0" TextWrapping="Wrap">
+        </TextBlock>
+
+        <!-- Abschnittsüberschrift: Ausgabeninformationen -->
+        <TextBlock Text="Wie sehe ich Informationen zur berechneten Werte, die ausgegeben sind?"
+           Foreground="White"
+           FontSize="16"
+           FontWeight="Bold"
+           HorizontalAlignment="Left"
+           Margin="20,340,0,0" />
+
+        <!-- Erklärung zur Anzeige der Ausgaben -->
+        <TextBlock Text="Bei den Ausgaben können Sie ebenfalls mit der Maus über die Zahlen fahren, um weitere Informationen zu den Ergebnissen zu erhalten."
+            Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="20,360,0,0" TextWrapping="Wrap">
+        </TextBlock>
+
+    </Grid>
+</Page>
